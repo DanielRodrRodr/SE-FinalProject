@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER ledsrgb
+	OPTION supported_peripherals = (ledsrgb);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = ledsrgb;
+END DRIVER
