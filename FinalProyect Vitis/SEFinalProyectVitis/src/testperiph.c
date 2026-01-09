@@ -30,6 +30,12 @@
 #include <stdio.h>
 #include "xparameters.h"
 #include "xil_cache.h"
+#include "matrizpuntos.h"
+#include "altavoz.h"
+#include "copro.h"
+#include "teclado.h"
+#include "ledsrgb.h"
+
 int main () 
 {
    Xil_ICacheEnable();
