@@ -71,8 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.statsThreshold 360
-set_param chipscope.maxJobs 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -99,7 +97,7 @@ set_property ip_output_repo {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-Final
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd}}
+read_vhdl -library xil_defaultlib {{C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd}}
 add_files {{C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/sources_1/bd/design_1/design_1.bd}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc}}]

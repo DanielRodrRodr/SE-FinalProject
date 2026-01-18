@@ -98,7 +98,7 @@ set_property ip_output_repo {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-Final
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0.xci}}
+read_ip -quiet {{C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0.xci}}
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

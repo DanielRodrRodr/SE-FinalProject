@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1767963065">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1768730828">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="design_1_wrapper_power_summary_routed.pb"/>
@@ -132,9 +132,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -146,19 +144,19 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ledsrgb_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_matrizpuntos_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_teclado_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_copro_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_altavoz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_matrizpuntos_0_0"/>
 </GenRun>

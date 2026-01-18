@@ -35,29 +35,29 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10476
+INFO: [Synth 8-7075] Helper process launched with PID 776
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1284.012 ; gain = 410.312
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.203 ; gain = 412.355
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2391' bound to instance 'design_1_i' of component 'design_1' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2391' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:60]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2417]
-INFO: [Synth 8-3491] module 'design_1_altavoz_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_altavoz_0_0_stub.vhdl:6' bound to instance 'altavoz_0' of component 'design_1_altavoz_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2896]
-INFO: [Synth 8-638] synthesizing module 'design_1_altavoz_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_altavoz_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2920]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2945]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_copro_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:6' bound to instance 'copro_0' of component 'design_1_copro_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2952]
-INFO: [Synth 8-638] synthesizing module 'design_1_copro_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:35]
-INFO: [Synth 8-3491] module 'design_1_ledsrgb_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:6' bound to instance 'ledsrgb_0' of component 'design_1_ledsrgb_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2978]
-INFO: [Synth 8-638] synthesizing module 'design_1_ledsrgb_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_matrizpuntos_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:6' bound to instance 'matrizpuntos_0' of component 'design_1_matrizpuntos_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3005]
-INFO: [Synth 8-638] synthesizing module 'design_1_matrizpuntos_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:39]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3035]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3048]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:64]
+INFO: [Synth 8-3491] module 'design_1_altavoz_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_altavoz_0_0_stub.vhdl:6' bound to instance 'altavoz_0' of component 'design_1_altavoz_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2896]
+INFO: [Synth 8-638] synthesizing module 'design_1_altavoz_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_altavoz_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2920]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2945]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_copro_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:6' bound to instance 'copro_0' of component 'design_1_copro_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2952]
+INFO: [Synth 8-638] synthesizing module 'design_1_copro_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'design_1_ledsrgb_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:6' bound to instance 'ledsrgb_0' of component 'design_1_ledsrgb_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2978]
+INFO: [Synth 8-638] synthesizing module 'design_1_ledsrgb_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_matrizpuntos_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:6' bound to instance 'matrizpuntos_0' of component 'design_1_matrizpuntos_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3005]
+INFO: [Synth 8-638] synthesizing module 'design_1_matrizpuntos_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3035]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3048]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:64]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1492]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
@@ -73,27 +73,27 @@ INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [c:/Users/Usu
 INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:607]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1276]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1276]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2248]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2248]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1492]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:697]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:911]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:965]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:993]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1047]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1075]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:911]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:965]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:993]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1047]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1075]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:697]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3277]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_teclado_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:6' bound to instance 'teclado_0' of component 'design_1_teclado_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3290]
-INFO: [Synth 8-638] synthesizing module 'design_1_teclado_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-5352-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3277]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_teclado_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:6' bound to instance 'teclado_0' of component 'design_1_teclado_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3290]
+INFO: [Synth 8-638] synthesizing module 'design_1_teclado_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-12412-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:35]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2417]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
@@ -137,18 +137,18 @@ WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_per
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1390.277 ; gain = 515.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1390.277 ; gain = 515.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:28 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1390.277 ; gain = 515.430
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1387.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1390.277 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -177,14 +177,14 @@ Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/Fin
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
 Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_ledsrgb_0_0/design_1_ledsrgb_0_0/design_1_ledsrgb_0_0_in_context.xdc] for cell 'design_1_i/ledsrgb_0'
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_ledsrgb_0_0/design_1_ledsrgb_0_0/design_1_ledsrgb_0_0_in_context.xdc] for cell 'design_1_i/ledsrgb_0'
-Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0_in_context.xdc] for cell 'design_1_i/matrizpuntos_0'
-Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0_in_context.xdc] for cell 'design_1_i/matrizpuntos_0'
 Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_teclado_0_0/design_1_teclado_0_0/design_1_teclado_0_0_in_context.xdc] for cell 'design_1_i/teclado_0'
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_teclado_0_0/design_1_teclado_0_0/design_1_teclado_0_0_in_context.xdc] for cell 'design_1_i/teclado_0'
 Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/design_1_copro_0_0/design_1_copro_0_0_in_context.xdc] for cell 'design_1_i/copro_0'
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/design_1_copro_0_0/design_1_copro_0_0_in_context.xdc] for cell 'design_1_i/copro_0'
 Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_altavoz_0_0/design_1_altavoz_0_0/design_1_altavoz_0_0_in_context.xdc] for cell 'design_1_i/altavoz_0'
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_altavoz_0_0/design_1_altavoz_0_0/design_1_altavoz_0_0_in_context.xdc] for cell 'design_1_i/altavoz_0'
+Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0_in_context.xdc] for cell 'design_1_i/matrizpuntos_0'
+Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0_in_context.xdc] for cell 'design_1_i/matrizpuntos_0'
 Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc]
 WARNING: [Vivado 12-584] No ports matched 'sonido_1'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:11]
 WARNING: [Vivado 12-584] No ports matched 'sonido_1'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:12]
@@ -196,23 +196,23 @@ Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/Fin
 Finished Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1387.445 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1407.457 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 1387.445 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1407.457 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -233,15 +233,15 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ledsrgb_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/matrizpuntos_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/teclado_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/copro_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/altavoz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/matrizpuntos_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:45 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -278,25 +278,25 @@ WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_per
 WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:49 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:56 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:56 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -314,37 +314,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -396,16 +396,16 @@ Report Cell Usage:
 |18    |OBUF                               |    22|
 +------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:56 . Memory (MB): peak = 1387.445 ; gain = 513.746
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 1387.445 ; gain = 513.746
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 1407.457 ; gain = 515.430
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1407.457 ; gain = 532.609
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1387.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1417.949 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1397.691 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1421.590 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -417,4 +417,4 @@ INFO: [Common 17-600] The following parameters have non-default value.
 tcl.statsThreshold
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 13:53:37 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 18 11:09:50 2026...

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Fri Jan  9 13:38:36 2026
+--Date        : Sun Jan 18 11:05:39 2026
 --Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2488,9 +2488,9 @@ architecture STRUCTURE of design_1 is
   component design_1_clk_wiz_1_0 is
   port (
     reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC;
-    clk_in1 : in STD_LOGIC
+    locked : out STD_LOGIC
   );
   end component design_1_clk_wiz_1_0;
   component design_1_rst_clk_wiz_1_100M_0 is
@@ -2561,37 +2561,6 @@ architecture STRUCTURE of design_1 is
     s00_axi_rready : in STD_LOGIC
   );
   end component design_1_ledsrgb_0_0;
-  component design_1_matrizpuntos_0_0 is
-  port (
-    col_serial_out : out STD_LOGIC;
-    col_clk : out STD_LOGIC;
-    row_serial_out : out STD_LOGIC;
-    row_clk : out STD_LOGIC;
-    reset_out : out STD_LOGIC;
-    reset2_out : out STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC;
-    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_awvalid : in STD_LOGIC;
-    s00_axi_awready : out STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_wvalid : in STD_LOGIC;
-    s00_axi_wready : out STD_LOGIC;
-    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_bvalid : out STD_LOGIC;
-    s00_axi_bready : in STD_LOGIC;
-    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    s00_axi_arvalid : in STD_LOGIC;
-    s00_axi_arready : out STD_LOGIC;
-    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC
-  );
-  end component design_1_matrizpuntos_0_0;
   component design_1_teclado_0_0 is
   port (
     S : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2671,6 +2640,37 @@ architecture STRUCTURE of design_1 is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component design_1_altavoz_0_0;
+  component design_1_matrizpuntos_0_0 is
+  port (
+    col_serial_out : out STD_LOGIC;
+    col_clk : out STD_LOGIC;
+    row_serial_out : out STD_LOGIC;
+    row_clk : out STD_LOGIC;
+    reset_out : out STD_LOGIC;
+    reset2_out : out STD_LOGIC;
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
+    s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_awvalid : in STD_LOGIC;
+    s00_axi_awready : out STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_wvalid : in STD_LOGIC;
+    s00_axi_wready : out STD_LOGIC;
+    s00_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_bvalid : out STD_LOGIC;
+    s00_axi_bready : in STD_LOGIC;
+    s00_axi_araddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s00_axi_arvalid : in STD_LOGIC;
+    s00_axi_arready : out STD_LOGIC;
+    s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    s00_axi_rvalid : out STD_LOGIC;
+    s00_axi_rready : in STD_LOGIC
+  );
+  end component design_1_matrizpuntos_0_0;
   signal R_0_1 : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;

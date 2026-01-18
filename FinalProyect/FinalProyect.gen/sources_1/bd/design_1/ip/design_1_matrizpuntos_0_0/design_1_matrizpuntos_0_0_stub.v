@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Fri Jan  9 12:56:50 2026
+// Date        : Sun Jan 18 11:08:27 2026
 // Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub {c:/Users/Usuario/Desktop/Uni/Semestre
 //               7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0_stub.v}

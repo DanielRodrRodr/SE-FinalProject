@@ -34,10 +34,10 @@
         "m05_couplers": {}
       },
       "ledsrgb_0": "",
-      "matrizpuntos_0": "",
       "teclado_0": "",
       "copro_0": "",
-      "altavoz_0": ""
+      "altavoz_0": "",
+      "matrizpuntos_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -1222,12 +1222,6 @@
         "xci_path": "ip\\design_1_ledsrgb_0_0\\design_1_ledsrgb_0_0.xci",
         "inst_hier_path": "ledsrgb_0"
       },
-      "matrizpuntos_0": {
-        "vlnv": "xilinx.com:user:matrizpuntos:1.0",
-        "xci_name": "design_1_matrizpuntos_0_0",
-        "xci_path": "ip\\design_1_matrizpuntos_0_0\\design_1_matrizpuntos_0_0.xci",
-        "inst_hier_path": "matrizpuntos_0"
-      },
       "teclado_0": {
         "vlnv": "xilinx.com:user:teclado:1.0",
         "xci_name": "design_1_teclado_0_0",
@@ -1245,6 +1239,12 @@
         "xci_name": "design_1_altavoz_0_0",
         "xci_path": "ip\\design_1_altavoz_0_0\\design_1_altavoz_0_0.xci",
         "inst_hier_path": "altavoz_0"
+      },
+      "matrizpuntos_0": {
+        "vlnv": "xilinx.com:user:matrizpuntos:1.0",
+        "xci_name": "design_1_matrizpuntos_0_0",
+        "xci_path": "ip\\design_1_matrizpuntos_0_0\\design_1_matrizpuntos_0_0.xci",
+        "inst_hier_path": "matrizpuntos_0"
       }
     },
     "interface_nets": {
@@ -1414,12 +1414,12 @@
           "microblaze_0_axi_periph/M02_ACLK",
           "ledsrgb_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M03_ACLK",
-          "matrizpuntos_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M04_ACLK",
           "teclado_0/s00_axi_aclk",
           "microblaze_0_axi_periph/M05_ACLK",
           "copro_0/s00_axi_aclk",
-          "altavoz_0/s00_axi_aclk"
+          "altavoz_0/s00_axi_aclk",
+          "matrizpuntos_0/s00_axi_aclk"
         ]
       },
       "reset_1": {
@@ -1452,12 +1452,12 @@
           "microblaze_0_axi_periph/M02_ARESETN",
           "ledsrgb_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M03_ARESETN",
-          "matrizpuntos_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M04_ARESETN",
           "teclado_0/s00_axi_aresetn",
           "microblaze_0_axi_periph/M05_ARESETN",
           "copro_0/s00_axi_aresetn",
-          "altavoz_0/s00_axi_aresetn"
+          "altavoz_0/s00_axi_aresetn",
+          "matrizpuntos_0/s00_axi_aresetn"
         ]
       },
       "sys_clock_1": {

@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Fri Jan  9 13:38:36 2026
+--Date        : Sun Jan 18 11:05:39 2026
 --Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -37,9 +37,9 @@ end design_1_wrapper;
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
-    sys_clock : in STD_LOGIC;
     usb_uart_rxd : in STD_LOGIC;
     usb_uart_txd : out STD_LOGIC;
+    sys_clock : in STD_LOGIC;
     reset : in STD_LOGIC;
     R_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
