@@ -97,24 +97,40 @@ void parpadeo_color(u32 r, u32 g, u32 b) {
    }
 }
 
-u8 convertir_char(char c){
-   u8 ret = 0x00;
-   switch (c) {
-      case '0': ret = 0x1F;break;
-      case '1': ret = 0x05;break;
-      case '2': ret = 0x17;break;
-      case '3': ret = 0x15;break;
-      case '4': ret = 0x0D;break;
-      case '5': ret = 0x19;break;
-      case '6': ret = 0x1B;break;
-      case '7': ret = 0x05;break;
-      case '8': ret = 0x1F;break;
-      case '9': ret = 0x1D;break;
-      case 'L': ret = 0x1C;break;
-      case 'V': ret = 0x0E;break;
-      case '-': ret = 0x02;break;
-      case ' ': ret = 0x00;break;
-      default:  ret = 0x00;
+const u8 char_a_columna[][5] = {
+   {0xFF,0x81,0x81,0x81,0xFF}, // '0'
+   {0x00,0x20,0x40,0xFF,0x00}, // '1'
+   {0x9F,0X91,0X91,0X91,0XF1},// '2'
+   {0X91,0X91,0X91,0X91,0xFF},// '3'
+   {0x11,0x11,0x11,0x1F,0x01},// '4'
+   {0XF1,0X91,0X91,0X91,0X9F},// '5'
+   {0xFF,0X91,0X91,0X91,0X9F},// '6'
+   {0xF0,0xF0,0xF0,0xF0,0XFF},// '7'
+   {0xFF,0X91,0X91,0X91,0xFF},// '8'
+   {0x1F,0X91,0X91,0X91,0xFF},// '9'
+   {0x00,0x00,0x00,0x00,0x00},//  " "
+   {0x00,0x10,0x10,0x10,0x00}, // '-'
+   {0xFF,0x01,0x01,0x01,0x01}, //'L'
+   {0xD0,0x1D,0x03,0x1D,0xD0} //'V'
+};
+
+int indice_de_caracter(char c){
+   int ret = 0;
+
+   if(c >= '0' && c <= '9'){
+      ret = c - '0';
+   }
+   else if(c == ' '){
+      ret = 10;
+   }
+   else if(c == '-'){
+      ret = 11;
+   }
+   else if(c == 'L'){
+      ret = 12;
+   }
+   else if(c == 'V'){
+      ret = 13;
    }
 
    return ret;
@@ -123,12 +139,17 @@ u8 convertir_char(char c){
 
 //funcion escribir en matriz de puntos
 void escribir_char(int pos, char c){
-   u32 paquete = 0;
-   u8 patron = convertir_char(c);
+   int indice = indice_de_caracter(c);
 
-   paquete = ((0 & 0x07) << 24) |   ((pos & 0x07) << 17) |  ((patron & 0x1F) << 8);
 
-   MATRIZPUNTOS_mWriteReg(XPAR_MATRIZPUNTOS_0_S00_AXI_BASEADDR, MATRIZPUNTOS_S00_AXI_SLV_REG0_OFFSET, paquete);
+   for (int fila = 0; fila < 5; fila++) {
+      u32 paquete = 0;
+      paquete = ((fila & 0x07) << 24) |
+                ((pos  & 0x07) << 17) |
+                ((char_a_columna[indice][fila]) << 8);
+
+      MATRIZPUNTOS_mWriteReg( XPAR_MATRIZPUNTOS_0_S00_AXI_BASEADDR,MATRIZPUNTOS_S00_AXI_SLV_REG0_OFFSET, paquete );
+   }
 }
 
 //escribir marcado, formato L0-0V 32
@@ -161,7 +182,7 @@ int main()
       key_code  = (keypad_data & 0x0F);
 
       int local_ant = gol_local;
-      ubt vis_ant = gol_visitante;
+      int vis_ant = gol_visitante;
       switch (key_code){
          case KEY_PAUSA:
             if (tiempo == 0) {
@@ -205,7 +226,7 @@ int main()
          blue_signal = 170;
       }
 
-       if (gol_visitante > gol_visitante_prev){
+       if (gol_visitante > vis_ant){
           ciclos_parpadeo = 0;
          red_signal = 0; 
          green_signal = 170; 
