@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Vitis_Final_Project" location="C:/Users/Usuario/workspace/Vitis_Final_Project" platform="C:/Users/Usuario/workspace/design_2_wrapper_1/export/design_2_wrapper_1/design_2_wrapper_1.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="Vitis_Final_Project_system" sysConfig="design_2_wrapper_1" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="56cac232a4a172be9220d9a496983faf">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2088120492">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.117061337" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="peripheral_tests"/>
+</sdkproject:SdkProject>
