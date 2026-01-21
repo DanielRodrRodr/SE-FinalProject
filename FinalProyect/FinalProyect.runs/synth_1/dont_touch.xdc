@@ -45,16 +45,16 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_mi
 # IP: bd/design_1/ip/design_1_ledsrgb_0_0/design_1_ledsrgb_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ledsrgb_0_0 || ORIG_REF_NAME==design_1_ledsrgb_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_matrizpuntos_0_0 || ORIG_REF_NAME==design_1_matrizpuntos_0_0} -quiet] -quiet
-
 # IP: bd/design_1/ip/design_1_teclado_0_0/design_1_teclado_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_teclado_0_0 || ORIG_REF_NAME==design_1_teclado_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_matrizpuntos_0_0/design_1_matrizpuntos_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_matrizpuntos_0_0 || ORIG_REF_NAME==design_1_matrizpuntos_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_copro_0_0/design_1_copro_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_copro_0_0 || ORIG_REF_NAME==design_1_copro_0_0} -quiet] -quiet
 
-# IP: bd/design_1/ip/design_1_altavoz_0_0/design_1_altavoz_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_altavoz_0_0 || ORIG_REF_NAME==design_1_altavoz_0_0} -quiet] -quiet
+# IP: bd/design_1/ip/design_1_motor_0_0/design_1_motor_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_motor_0_0 || ORIG_REF_NAME==design_1_motor_0_0} -quiet] -quiet
 
 # XDC: c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/design_1_ooc.xdc

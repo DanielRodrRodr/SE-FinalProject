@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param tcl.statsThreshold 360
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -86,6 +87,7 @@ set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Xilinx/Vivado/2023.1/data/boards/board_schemas} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_repo_paths {
+  {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/motor_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/altavoz_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/copro_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/matrizpuntos_1_0}

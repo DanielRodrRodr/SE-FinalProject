@@ -7,10 +7,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {green_0}]
 set_property PACKAGE_PIN H1 [get_ports {blue_0}]					
 set_property IOSTANDARD LVCMOS33 [get_ports {blue_0}]
 
-############## ALTAVOZ ##############
-set_property PACKAGE_PIN M19 [get_ports sonido_1]	
-set_property IOSTANDARD LVCMOS33 [get_ports sonido_1]
-
 ############## TECLADO ##############
 ##Sch name = JA1
 set_property PACKAGE_PIN J2 [get_ports {R_0[2]}]					
@@ -120,3 +116,38 @@ set_property PACKAGE_PIN V14 [get_ports {led_0[7]}]
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[14]}]
 #set_property PACKAGE_PIN L1 [get_ports {led[15]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {led[15]}]
+	
+###### Motor
+#
+#NET control_motor<0> LOC=L15;
+#NET control_motor<1> LOC=L5;
+#NET control_motor<2> LOC=N2;
+#NET control_motor<3> LOC=M3;
+
+##Pmod Header JC
+##Sch name = JC1
+set_property PACKAGE_PIN K17 [get_ports {control_motor_0[0]}]				
+	set_property IOSTANDARD LVCMOS33 [get_ports {control_motor_0[0]}]
+##Sch name = JC2
+set_property PACKAGE_PIN M18 [get_ports {control_motor_0[2]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {control_motor_0[2]}]
+##Sch name = JC3
+#set_property PACKAGE_PIN N17 [get_ports {JC[2]}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[2]}]
+##Sch name = JC4
+#set_property PACKAGE_PIN P18 [get_ports {JC[3]}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[3]}]
+##Sch name = JC7
+set_property PACKAGE_PIN L17 [get_ports {control_motor_0[1]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {control_motor_0[1]}]
+##Sch name = JC8
+set_property PACKAGE_PIN M19 [get_ports {control_motor_0[3]}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {control_motor_0[3]}]
+##Sch name = JC9
+#set_property PACKAGE_PIN P17 [get_ports {JC[6]}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[6]}]
+##Sch name = JC10
+#set_property PACKAGE_PIN R18 [get_ports {JC[7]}]					
+	#set_property IOSTANDARD LVCMOS33 [get_ports {JC[7]}]
+
+

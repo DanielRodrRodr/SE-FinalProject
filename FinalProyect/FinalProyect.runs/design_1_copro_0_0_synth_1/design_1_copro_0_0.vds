@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Jan  9 12:49:32 2026
-# Process ID: 15260
+# Start of session at: Tue Jan 20 03:12:43 2026
+# Process ID: 3768
 # Current directory: C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/design_1_copro_0_0_synth_1
 # Command line: vivado.exe -log design_1_copro_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_copro_0_0.tcl
 # Log file: C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/design_1_copro_0_0_synth_1/design_1_copro_0_0.vds
@@ -29,28 +29,24 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12164
+INFO: [Synth 8-7075] Helper process launched with PID 11236
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1255.867 ; gain = 409.242
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1256.977 ; gain = 410.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_copro_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/synth/design_1_copro_0_0.vhd:84]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'copro_v1_0' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0.vhd:5' bound to instance 'U0' of component 'copro_v1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/synth/design_1_copro_0_0.vhd:152]
-INFO: [Synth 8-638] synthesizing module 'copro_v1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'copro_v1_0' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0.vhd:5' bound to instance 'U0' of component 'copro_v1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/synth/design_1_copro_0_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'copro_v1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0.vhd:51]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'copro_v1_0_S00_AXI' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0_S00_AXI.vhd:5' bound to instance 'copro_v1_0_S00_AXI_inst' of component 'copro_v1_0_S00_AXI' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'copro_v1_0_S00_AXI' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-226] default block is never used [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0_S00_AXI.vhd:231]
-INFO: [Synth 8-226] default block is never used [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0_S00_AXI.vhd:361]
-INFO: [Synth 8-256] done synthesizing module 'copro_v1_0_S00_AXI' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0_S00_AXI.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'copro_v1_0' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/b960/hdl/copro_v1_0.vhd:51]
+INFO: [Synth 8-3491] module 'copro_v1_0_S00_AXI' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0_S00_AXI.vhd:5' bound to instance 'copro_v1_0_S00_AXI_inst' of component 'copro_v1_0_S00_AXI' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'copro_v1_0_S00_AXI' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-226] default block is never used [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0_S00_AXI.vhd:230]
+INFO: [Synth 8-226] default block is never used [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0_S00_AXI.vhd:353]
+INFO: [Synth 8-256] done synthesizing module 'copro_v1_0_S00_AXI' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0_S00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'copro_v1_0' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ipshared/32e2/hdl/copro_v1_0.vhd:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_copro_0_0' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_copro_0_0/synth/design_1_copro_0_0.vhd:84]
-WARNING: [Synth 8-7129] Port buttons[3] in module copro_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[2] in module copro_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[1] in module copro_v1_0_S00_AXI is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[0] in module copro_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module copro_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module copro_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module copro_v1_0_S00_AXI is either unconnected or has no load
@@ -58,63 +54,65 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module copro_v1_0_S00_AXI is eit
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module copro_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module copro_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1353.477 ; gain = 506.852
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1352.762 ; gain = 506.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1353.477 ; gain = 506.852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1352.762 ; gain = 506.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1353.477 ; gain = 506.852
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1352.762 ; gain = 506.359
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1353.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1352.762 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1411.539 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1418.320 ; gain = 0.098
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.311 . Memory (MB): peak = 1411.578 ; gain = 0.039
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 5     
-	                4 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 4     
-	   4 Input   32 Bit        Muxes := 5     
-	   2 Input    8 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 5     
+	   4 Input   32 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -131,10 +129,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port buttons[3] in module design_1_copro_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[2] in module design_1_copro_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[1] in module design_1_copro_0_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port buttons[0] in module design_1_copro_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_copro_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_copro_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_copro_0_0 is either unconnected or has no load
@@ -142,25 +136,25 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_copro_0_0 is e
 WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_copro_0_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_copro_0_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -178,37 +172,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -224,41 +218,41 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY4 |    19|
-|2     |LUT1   |     2|
-|3     |LUT2   |    57|
-|4     |LUT3   |    35|
-|5     |LUT4   |     5|
-|6     |LUT5   |     1|
-|7     |LUT6   |    45|
-|8     |FDRE   |   227|
+|1     |CARRY4 |    15|
+|2     |LUT1   |     3|
+|3     |LUT2   |    43|
+|4     |LUT3   |     5|
+|5     |LUT4   |     6|
+|6     |LUT5   |     2|
+|7     |LUT6   |    83|
+|8     |FDRE   |   197|
 |9     |FDSE   |     3|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:52 . Memory (MB): peak = 1418.320 ; gain = 506.852
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1418.320 ; gain = 571.695
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:46 . Memory (MB): peak = 1411.578 ; gain = 506.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1411.578 ; gain = 565.176
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1418.320 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1411.578 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1411.578 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6eabc3eb
+Synth Design complete | Checksum: e232ddea
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+33 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.statsThreshold
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/design_1_copro_0_0_synth_1/design_1_copro_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_copro_0_0, cache-ID = 4e5556d9ff8c9c62
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_copro_0_0, cache-ID = e83523b46fbe4aac
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/design_1_copro_0_0_synth_1/design_1_copro_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_copro_0_0_utilization_synth.rpt -pb design_1_copro_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 12:51:48 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 20 03:14:45 2026...

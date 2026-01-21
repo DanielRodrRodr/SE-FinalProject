@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "design_1_xbar_0_synth_1" START { ROLLUP_AUTO }
 set_param tcl.statsThreshold 360
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -88,6 +89,7 @@ set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Xilinx/Vivado/2023.1/data/boards/board_schemas} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_repo_paths {
+  {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/motor_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/altavoz_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/copro_1_0}
   {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/matrizpuntos_1_0}
@@ -99,7 +101,7 @@ set_property ip_output_repo {c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-Final
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci}}
+read_ip -quiet {{C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }

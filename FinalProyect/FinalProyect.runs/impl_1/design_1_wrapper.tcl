@@ -136,6 +136,7 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.cache/wt} [current_project]
   set_property parent.project_path {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.xpr} [current_project]
   set_property ip_repo_paths {
+  {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/motor_1_0}
   {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/altavoz_1_0}
   {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/copro_1_0}
   {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/matrizpuntos_1_0}

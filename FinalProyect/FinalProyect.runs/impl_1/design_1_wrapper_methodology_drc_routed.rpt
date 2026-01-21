@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Sun Jan 18 11:13:18 2026
+| Date         : Tue Jan 20 03:55:53 2026
 | Host         : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 114
+             Violations found: 121
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 94         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 97         |
 | LUTAR-1   | Warning          | LUT drives async reset alert  | 1          |
 | TIMING-9  | Warning          | Unknown CDC Logic             | 1          |
-| TIMING-18 | Warning          | Missing input or output delay | 18         |
+| TIMING-18 | Warning          | Missing input or output delay | 22         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -357,150 +357,165 @@ Related violations: <none>
 
 TIMING-17#65 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/motor_0/U0/motor_v1_0_S00_AXI_inst/motor_step_entity/current_step_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#66 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/motor_0/U0/motor_v1_0_S00_AXI_inst/motor_step_entity/current_step_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#67 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/motor_0/U0/motor_v1_0_S00_AXI_inst/motor_step_entity/current_step_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#68 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/ldCode2_reg/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#69 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#70 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/FSM_sequential_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#71 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/ldCode2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#72 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#73 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/synchronizer.aux1_reg/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#74 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[0]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[10]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/regcode_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[11]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/synchronizer.aux1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[12]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[13]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[14]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[15]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[16]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[17]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[18]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[19]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[1]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[2]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[3]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[4]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[5]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[6]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[7]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[8]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[9]/C is not reached by a timing clock
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/timer.count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
 The clock pin design_1_i/teclado_0/U0/teclado_v1_0_S00_AXI_inst/TeclaDetecInst/xSync_reg/C is not reached by a timing clock
 Related violations: <none>
@@ -517,90 +532,110 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on buttons_0[0] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on usb_uart_rxd relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on buttons_0[1] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on blue_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on buttons_0[2] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on green_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on buttons_0[3] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on led_0[0] relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on led_0[1] relative to the rising and/or falling clock edge(s) of sys_clock.
+An input delay is missing on usb_uart_rxd relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on led_0[2] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on blue_0 relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on led_0[3] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on green_0 relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on led_0[4] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[0] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on led_0[5] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[1] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on led_0[6] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[2] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on led_0[7] relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[3] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on red_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[4] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on reset2_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[5] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on reset_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[6] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on row_clk_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on led_0[7] relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on row_serial_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+An output delay is missing on red_0 relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
 
 TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on reset2_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on reset_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on row_clk_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on row_serial_out_0 relative to the rising and/or falling clock edge(s) of sys_clock.
+Related violations: <none>
+
+TIMING-18#22 Warning
 Missing input or output delay  
 An output delay is missing on usb_uart_txd relative to the rising and/or falling clock edge(s) of sys_clock.
 Related violations: <none>
