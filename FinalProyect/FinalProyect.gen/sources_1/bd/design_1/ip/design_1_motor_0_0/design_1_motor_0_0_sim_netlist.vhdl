@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
--- Date        : Tue Jan 20 03:50:22 2026
+-- Date        : Wed Jan 28 00:04:03 2026
 -- Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/Usuario/Desktop/Uni/Semestre
 --               7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0/design_1_motor_0_0_sim_netlist.vhdl}
@@ -17,7 +17,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_motor_0_0_motorstep is
   port (
+    control_motor : out STD_LOGIC_VECTOR ( 3 downto 0 );
     step : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    data30 : in STD_LOGIC;
     sel0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     \current_step_reg[2]_0\ : in STD_LOGIC;
     motor_clk : in STD_LOGIC;
@@ -33,10 +35,58 @@ architecture STRUCTURE of design_1_motor_0_0_motorstep is
   signal \current_step[2]_i_1_n_0\ : STD_LOGIC;
   signal \^step\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of \control_motor[0]_INST_0\ : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of \control_motor[1]_INST_0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \control_motor[2]_INST_0\ : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of \control_motor[3]_INST_0\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \current_step[1]_i_1\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \current_step[2]_i_1\ : label is "soft_lutpair0";
 begin
   step(2 downto 0) <= \^step\(2 downto 0);
+\control_motor[0]_INST_0\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"AA80"
+    )
+        port map (
+      I0 => \^step\(2),
+      I1 => \^step\(0),
+      I2 => data30,
+      I3 => \^step\(1),
+      O => control_motor(0)
+    );
+\control_motor[1]_INST_0\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"6222"
+    )
+        port map (
+      I0 => \^step\(2),
+      I1 => \^step\(1),
+      I2 => data30,
+      I3 => \^step\(0),
+      O => control_motor(1)
+    );
+\control_motor[2]_INST_0\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"00F8"
+    )
+        port map (
+      I0 => \^step\(0),
+      I1 => data30,
+      I2 => \^step\(1),
+      I3 => \^step\(2),
+      O => control_motor(2)
+    );
+\control_motor[3]_INST_0\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"800F"
+    )
+        port map (
+      I0 => data30,
+      I1 => \^step\(0),
+      I2 => \^step\(2),
+      I3 => \^step\(1),
+      O => control_motor(3)
+    );
 \current_step[0]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
@@ -1016,6 +1066,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_motor_0_0_motor_v1_0_S00_AXI is
   port (
+    control_motor : out STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_AWREADY : out STD_LOGIC;
     S_AXI_WREADY : out STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
@@ -1086,6 +1137,7 @@ architecture STRUCTURE of design_1_motor_0_0_motor_v1_0_S00_AXI is
   signal \axi_rdata[9]_i_1_n_0\ : STD_LOGIC;
   signal axi_rvalid_i_1_n_0 : STD_LOGIC;
   signal axi_wready0 : STD_LOGIC;
+  signal data30 : STD_LOGIC;
   signal divisor_frec_n_0 : STD_LOGIC;
   signal motor_clk : STD_LOGIC;
   signal \motor_ctl[15]_i_1_n_0\ : STD_LOGIC;
@@ -1115,7 +1167,6 @@ architecture STRUCTURE of design_1_motor_0_0_motor_v1_0_S00_AXI is
   signal \motor_ctl_reg_n_0_[27]\ : STD_LOGIC;
   signal \motor_ctl_reg_n_0_[28]\ : STD_LOGIC;
   signal \motor_ctl_reg_n_0_[29]\ : STD_LOGIC;
-  signal \motor_ctl_reg_n_0_[2]\ : STD_LOGIC;
   signal \motor_ctl_reg_n_0_[30]\ : STD_LOGIC;
   signal \motor_ctl_reg_n_0_[31]\ : STD_LOGIC;
   signal \motor_ctl_reg_n_0_[3]\ : STD_LOGIC;
@@ -1134,42 +1185,42 @@ architecture STRUCTURE of design_1_motor_0_0_motor_v1_0_S00_AXI is
   signal \slv_reg_wren__2\ : STD_LOGIC;
   signal step : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \axi_rdata[0]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \axi_rdata[10]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \axi_rdata[11]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \axi_rdata[12]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \axi_rdata[13]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \axi_rdata[14]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \axi_rdata[15]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \axi_rdata[16]_i_1\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \axi_rdata[17]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \axi_rdata[18]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \axi_rdata[19]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \axi_rdata[1]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \axi_rdata[20]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \axi_rdata[21]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \axi_rdata[22]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \axi_rdata[23]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \axi_rdata[24]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \axi_rdata[25]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \axi_rdata[26]_i_1\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \axi_rdata[27]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \axi_rdata[28]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \axi_rdata[29]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \axi_rdata[2]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \axi_rdata[30]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \axi_rdata[31]_i_2\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \axi_rdata[3]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \axi_rdata[4]_i_1\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \axi_rdata[5]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \axi_rdata[6]_i_1\ : label is "soft_lutpair17";
-  attribute SOFT_HLUTNM of \axi_rdata[7]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \axi_rdata[8]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \axi_rdata[9]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \motor_ctl[31]_i_2\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of axi_arready_i_1 : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \axi_rdata[0]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \axi_rdata[10]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of \axi_rdata[11]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \axi_rdata[12]_i_1\ : label is "soft_lutpair16";
+  attribute SOFT_HLUTNM of \axi_rdata[13]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \axi_rdata[14]_i_1\ : label is "soft_lutpair15";
+  attribute SOFT_HLUTNM of \axi_rdata[15]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \axi_rdata[16]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \axi_rdata[17]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \axi_rdata[18]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \axi_rdata[19]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \axi_rdata[1]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \axi_rdata[20]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \axi_rdata[21]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \axi_rdata[22]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \axi_rdata[23]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \axi_rdata[24]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \axi_rdata[25]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \axi_rdata[26]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \axi_rdata[27]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \axi_rdata[28]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \axi_rdata[29]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \axi_rdata[2]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \axi_rdata[30]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \axi_rdata[31]_i_2\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \axi_rdata[3]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \axi_rdata[4]_i_1\ : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of \axi_rdata[5]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \axi_rdata[6]_i_1\ : label is "soft_lutpair19";
+  attribute SOFT_HLUTNM of \axi_rdata[7]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \axi_rdata[8]_i_1\ : label is "soft_lutpair18";
+  attribute SOFT_HLUTNM of \axi_rdata[9]_i_1\ : label is "soft_lutpair17";
+  attribute SOFT_HLUTNM of axi_rvalid_i_1 : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of axi_wready_i_1 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of \motor_ctl[31]_i_2\ : label is "soft_lutpair6";
 begin
   S_AXI_ARREADY <= \^s_axi_arready\;
   S_AXI_AWREADY <= \^s_axi_awready\;
@@ -1561,7 +1612,7 @@ axi_bvalid_reg: unisim.vcomponents.FDRE
       INIT => X"00E2"
     )
         port map (
-      I0 => \motor_ctl_reg_n_0_[2]\,
+      I0 => data30,
       I1 => axi_araddr(2),
       I2 => motor_step(2),
       I3 => axi_araddr(3),
@@ -2230,7 +2281,7 @@ divisor_frec: entity work.design_1_motor_0_0_one_hundred_K_counter
       C => s00_axi_aclk,
       CE => \motor_ctl[7]_i_1_n_0\,
       D => s00_axi_wdata(2),
-      Q => \motor_ctl_reg_n_0_[2]\,
+      Q => data30,
       R => divisor_frec_n_0
     );
 \motor_ctl_reg[30]\: unisim.vcomponents.FDRE
@@ -2307,8 +2358,10 @@ divisor_frec: entity work.design_1_motor_0_0_one_hundred_K_counter
     );
 motor_step_entity: entity work.design_1_motor_0_0_motorstep
      port map (
+      control_motor(3 downto 0) => control_motor(3 downto 0),
       \current_step_reg[2]_0\ => \motor_ctl_reg_n_0_[1]\,
       \current_step_reg[2]_1\ => divisor_frec_n_0,
+      data30 => data30,
       motor_clk => motor_clk,
       sel0(0) => sel0(3),
       step(2 downto 0) => step(2 downto 0)
@@ -2344,6 +2397,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_motor_0_0_motor_v1_0 is
   port (
+    control_motor : out STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_AWREADY : out STD_LOGIC;
     S_AXI_WREADY : out STD_LOGIC;
     S_AXI_ARREADY : out STD_LOGIC;
@@ -2373,6 +2427,7 @@ motor_v1_0_S00_AXI_inst: entity work.design_1_motor_0_0_motor_v1_0_S00_AXI
       S_AXI_ARREADY => S_AXI_ARREADY,
       S_AXI_AWREADY => S_AXI_AWREADY,
       S_AXI_WREADY => S_AXI_WREADY,
+      control_motor(3 downto 0) => control_motor(3 downto 0),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(1 downto 0) => s00_axi_araddr(1 downto 0),
       s00_axi_aresetn => s00_axi_aresetn,
@@ -2395,6 +2450,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_motor_0_0 is
   port (
+    control_motor : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axi_aclk : in STD_LOGIC;
+    s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s00_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axi_awvalid : in STD_LOGIC;
@@ -2413,9 +2471,7 @@ entity design_1_motor_0_0 is
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
+    s00_axi_rready : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_motor_0_0 : entity is true;
@@ -2429,15 +2485,15 @@ end design_1_motor_0_0;
 
 architecture STRUCTURE of design_1_motor_0_0 is
   signal \<const0>\ : STD_LOGIC;
-  signal n_0_100 : STD_LOGIC;
-  signal n_0_97 : STD_LOGIC;
-  signal n_0_98 : STD_LOGIC;
-  signal n_0_99 : STD_LOGIC;
+  signal n_0_101 : STD_LOGIC;
+  signal n_0_102 : STD_LOGIC;
+  signal n_0_103 : STD_LOGIC;
+  signal n_0_104 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of i_100 : label is "soft_lutpair20";
-  attribute SOFT_HLUTNM of i_97 : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of i_98 : label is "soft_lutpair19";
-  attribute SOFT_HLUTNM of i_99 : label is "soft_lutpair20";
+  attribute SOFT_HLUTNM of i_101 : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of i_102 : label is "soft_lutpair21";
+  attribute SOFT_HLUTNM of i_103 : label is "soft_lutpair22";
+  attribute SOFT_HLUTNM of i_104 : label is "soft_lutpair22";
   attribute x_interface_info : string;
   attribute x_interface_info of s00_axi_aclk : signal is "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK";
   attribute x_interface_parameter : string;
@@ -2478,6 +2534,7 @@ U0: entity work.design_1_motor_0_0_motor_v1_0
       S_AXI_ARREADY => s00_axi_arready,
       S_AXI_AWREADY => s00_axi_awready,
       S_AXI_WREADY => s00_axi_wready,
+      control_motor(3 downto 0) => control_motor(3 downto 0),
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_araddr(1 downto 0) => s00_axi_araddr(3 downto 2),
       s00_axi_aresetn => s00_axi_aresetn,
@@ -2493,36 +2550,36 @@ U0: entity work.design_1_motor_0_0_motor_v1_0
       s00_axi_wstrb(3 downto 0) => s00_axi_wstrb(3 downto 0),
       s00_axi_wvalid => s00_axi_wvalid
     );
-i_100: unisim.vcomponents.LUT1
+i_101: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => s00_axi_aresetn,
-      O => n_0_100
+      O => n_0_101
     );
-i_97: unisim.vcomponents.LUT1
+i_102: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => s00_axi_aresetn,
-      O => n_0_97
+      O => n_0_102
     );
-i_98: unisim.vcomponents.LUT1
+i_103: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => s00_axi_aresetn,
-      O => n_0_98
+      O => n_0_103
     );
-i_99: unisim.vcomponents.LUT1
+i_104: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => s00_axi_aresetn,
-      O => n_0_99
+      O => n_0_104
     );
 end STRUCTURE;

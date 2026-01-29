@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-// Date        : Tue Jan 20 03:50:22 2026
+// Date        : Wed Jan 28 00:04:03 2026
 // Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/Usuario/Desktop/Uni/Semestre
 //               7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0/design_1_motor_0_0_sim_netlist.v}
@@ -16,7 +16,10 @@
 (* CHECK_LICENSE_TYPE = "design_1_motor_0_0,motor_v1_0,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "motor_v1_0,Vivado 2023.1" *) 
 (* NotValidForBitStream *)
 module design_1_motor_0_0
-   (s00_axi_awaddr,
+   (control_motor,
+    s00_axi_aclk,
+    s00_axi_aresetn,
+    s00_axi_awaddr,
     s00_axi_awprot,
     s00_axi_awvalid,
     s00_axi_awready,
@@ -34,9 +37,10 @@ module design_1_motor_0_0
     s00_axi_rdata,
     s00_axi_rresp,
     s00_axi_rvalid,
-    s00_axi_rready,
-    s00_axi_aclk,
-    s00_axi_aresetn);
+    s00_axi_rready);
+  output [3:0]control_motor;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
+  (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 4, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]s00_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWPROT" *) input [2:0]s00_axi_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI AWVALID" *) input s00_axi_awvalid;
@@ -56,14 +60,13 @@ module design_1_motor_0_0
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]s00_axi_rresp;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output s00_axi_rvalid;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input s00_axi_rready;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, INSERT_VIP 0" *) input s00_axi_aclk;
-  (* x_interface_info = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *) (* x_interface_parameter = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input s00_axi_aresetn;
 
   wire \<const0> ;
-  wire n_0_100;
-  wire n_0_97;
-  wire n_0_98;
-  wire n_0_99;
+  wire [3:0]control_motor;
+  wire n_0_101;
+  wire n_0_102;
+  wire n_0_103;
+  wire n_0_104;
   wire s00_axi_aclk;
   wire [3:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -92,6 +95,7 @@ module design_1_motor_0_0
        (.S_AXI_ARREADY(s00_axi_arready),
         .S_AXI_AWREADY(s00_axi_awready),
         .S_AXI_WREADY(s00_axi_wready),
+        .control_motor(control_motor),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr[3:2]),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -106,35 +110,36 @@ module design_1_motor_0_0
         .s00_axi_wdata(s00_axi_wdata),
         .s00_axi_wstrb(s00_axi_wstrb),
         .s00_axi_wvalid(s00_axi_wvalid));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    i_100
+    i_101
        (.I0(s00_axi_aresetn),
-        .O(n_0_100));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+        .O(n_0_101));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    i_97
+    i_102
        (.I0(s00_axi_aresetn),
-        .O(n_0_97));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+        .O(n_0_102));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    i_98
+    i_103
        (.I0(s00_axi_aresetn),
-        .O(n_0_98));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+        .O(n_0_103));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT1 #(
     .INIT(2'h1)) 
-    i_99
+    i_104
        (.I0(s00_axi_aresetn),
-        .O(n_0_99));
+        .O(n_0_104));
 endmodule
 
 (* ORIG_REF_NAME = "motor_v1_0" *) 
 module design_1_motor_0_0_motor_v1_0
-   (S_AXI_AWREADY,
+   (control_motor,
+    S_AXI_AWREADY,
     S_AXI_WREADY,
     S_AXI_ARREADY,
     s00_axi_rdata,
@@ -151,6 +156,7 @@ module design_1_motor_0_0_motor_v1_0
     s00_axi_arvalid,
     s00_axi_bready,
     s00_axi_rready);
+  output [3:0]control_motor;
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
@@ -172,6 +178,7 @@ module design_1_motor_0_0_motor_v1_0
   wire S_AXI_ARREADY;
   wire S_AXI_AWREADY;
   wire S_AXI_WREADY;
+  wire [3:0]control_motor;
   wire s00_axi_aclk;
   wire [1:0]s00_axi_araddr;
   wire s00_axi_aresetn;
@@ -191,6 +198,7 @@ module design_1_motor_0_0_motor_v1_0
        (.S_AXI_ARREADY(S_AXI_ARREADY),
         .S_AXI_AWREADY(S_AXI_AWREADY),
         .S_AXI_WREADY(S_AXI_WREADY),
+        .control_motor(control_motor),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_araddr(s00_axi_araddr),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -209,7 +217,8 @@ endmodule
 
 (* ORIG_REF_NAME = "motor_v1_0_S00_AXI" *) 
 module design_1_motor_0_0_motor_v1_0_S00_AXI
-   (S_AXI_AWREADY,
+   (control_motor,
+    S_AXI_AWREADY,
     S_AXI_WREADY,
     S_AXI_ARREADY,
     s00_axi_rdata,
@@ -226,6 +235,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
     s00_axi_arvalid,
     s00_axi_bready,
     s00_axi_rready);
+  output [3:0]control_motor;
   output S_AXI_AWREADY;
   output S_AXI_WREADY;
   output S_AXI_ARREADY;
@@ -291,6 +301,8 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
   wire \axi_rdata[9]_i_1_n_0 ;
   wire axi_rvalid_i_1_n_0;
   wire axi_wready0;
+  wire [3:0]control_motor;
+  wire data30;
   wire divisor_frec_n_0;
   wire motor_clk;
   wire \motor_ctl[15]_i_1_n_0 ;
@@ -320,7 +332,6 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
   wire \motor_ctl_reg_n_0_[27] ;
   wire \motor_ctl_reg_n_0_[28] ;
   wire \motor_ctl_reg_n_0_[29] ;
-  wire \motor_ctl_reg_n_0_[2] ;
   wire \motor_ctl_reg_n_0_[30] ;
   wire \motor_ctl_reg_n_0_[31] ;
   wire \motor_ctl_reg_n_0_[3] ;
@@ -395,7 +406,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .D(\axi_araddr[3]_i_1_n_0 ),
         .Q(axi_araddr[3]),
         .S(divisor_frec_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT2 #(
     .INIT(4'h2)) 
     axi_arready_i_1
@@ -470,7 +481,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .D(axi_bvalid_i_1_n_0),
         .Q(s00_axi_bvalid),
         .R(divisor_frec_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \axi_rdata[0]_i_1 
@@ -479,7 +490,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I2(motor_step[0]),
         .I3(axi_araddr[3]),
         .O(\axi_rdata[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[10]_i_1 
@@ -487,7 +498,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[10] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[10]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[11]_i_1 
@@ -495,7 +506,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[11] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[11]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[12]_i_1 
@@ -503,7 +514,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[12] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[12]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[13]_i_1 
@@ -511,7 +522,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[13] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[13]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[14]_i_1 
@@ -519,7 +530,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[14] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[14]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[15]_i_1 
@@ -527,7 +538,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[15] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[15]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[16]_i_1 
@@ -535,7 +546,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[16] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[16]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[17]_i_1 
@@ -543,7 +554,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[17] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[17]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[18]_i_1 
@@ -551,7 +562,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[18] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[18]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[19]_i_1 
@@ -559,7 +570,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[19] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[19]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \axi_rdata[1]_i_1 
@@ -568,7 +579,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I2(motor_step[1]),
         .I3(axi_araddr[3]),
         .O(\axi_rdata[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[20]_i_1 
@@ -576,7 +587,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[20] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[20]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[21]_i_1 
@@ -584,7 +595,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[21] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[21]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[22]_i_1 
@@ -592,7 +603,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[22] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[22]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[23]_i_1 
@@ -600,7 +611,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[23] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[23]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[24]_i_1 
@@ -608,7 +619,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[24] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[24]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[25]_i_1 
@@ -616,7 +627,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[25] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[25]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[26]_i_1 
@@ -624,7 +635,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[26] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[26]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[27]_i_1 
@@ -632,7 +643,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[27] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[27]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[28]_i_1 
@@ -640,7 +651,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[28] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[28]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[29]_i_1 
@@ -648,16 +659,16 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[29] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[29]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \axi_rdata[2]_i_1 
-       (.I0(\motor_ctl_reg_n_0_[2] ),
+       (.I0(data30),
         .I1(axi_araddr[2]),
         .I2(motor_step[2]),
         .I3(axi_araddr[3]),
         .O(\axi_rdata[2]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[30]_i_1 
@@ -672,7 +683,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(s00_axi_arvalid),
         .I2(s00_axi_rvalid),
         .O(slv_reg_rden));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[31]_i_2 
@@ -680,7 +691,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[31] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[31]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[3]_i_1 
@@ -688,7 +699,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[3] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[3]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[4]_i_1 
@@ -696,7 +707,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[4] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[4]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[5]_i_1 
@@ -704,7 +715,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[5] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[5]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[6]_i_1 
@@ -712,7 +723,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[6] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[6]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[7]_i_1 
@@ -720,7 +731,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[7] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[7]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[8]_i_1 
@@ -728,7 +739,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I1(\motor_ctl_reg_n_0_[8] ),
         .I2(axi_araddr[3]),
         .O(\axi_rdata[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT3 #(
     .INIT(8'h04)) 
     \axi_rdata[9]_i_1 
@@ -928,7 +939,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .D(\axi_rdata[9]_i_1_n_0 ),
         .Q(s00_axi_rdata[9]),
         .R(divisor_frec_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT4 #(
     .INIT(16'h08F8)) 
     axi_rvalid_i_1
@@ -943,7 +954,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .D(axi_rvalid_i_1_n_0),
         .Q(s00_axi_rvalid),
         .R(divisor_frec_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'h0800)) 
     axi_wready_i_1
@@ -1006,7 +1017,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .I3(p_3_in[1]),
         .I4(s00_axi_aresetn),
         .O(\motor_ctl[31]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     \motor_ctl[31]_i_2 
@@ -1160,7 +1171,7 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
        (.C(s00_axi_aclk),
         .CE(\motor_ctl[7]_i_1_n_0 ),
         .D(s00_axi_wdata[2]),
-        .Q(\motor_ctl_reg_n_0_[2] ),
+        .Q(data30),
         .R(divisor_frec_n_0));
   FDRE \motor_ctl_reg[30] 
        (.C(s00_axi_aclk),
@@ -1217,8 +1228,10 @@ module design_1_motor_0_0_motor_v1_0_S00_AXI
         .Q(\motor_ctl_reg_n_0_[9] ),
         .R(divisor_frec_n_0));
   design_1_motor_0_0_motorstep motor_step_entity
-       (.\current_step_reg[2]_0 (\motor_ctl_reg_n_0_[1] ),
+       (.control_motor(control_motor),
+        .\current_step_reg[2]_0 (\motor_ctl_reg_n_0_[1] ),
         .\current_step_reg[2]_1 (divisor_frec_n_0),
+        .data30(data30),
         .motor_clk(motor_clk),
         .sel0(sel0),
         .step(step));
@@ -1244,26 +1257,68 @@ endmodule
 
 (* ORIG_REF_NAME = "motorstep" *) 
 module design_1_motor_0_0_motorstep
-   (step,
+   (control_motor,
+    step,
+    data30,
     sel0,
     \current_step_reg[2]_0 ,
     motor_clk,
     \current_step_reg[2]_1 );
+  output [3:0]control_motor;
   output [2:0]step;
+  input data30;
   input [0:0]sel0;
   input \current_step_reg[2]_0 ;
   input motor_clk;
   input \current_step_reg[2]_1 ;
 
+  wire [3:0]control_motor;
   wire \current_step[0]_i_1_n_0 ;
   wire \current_step[1]_i_1_n_0 ;
   wire \current_step[2]_i_1_n_0 ;
   wire \current_step_reg[2]_0 ;
   wire \current_step_reg[2]_1 ;
+  wire data30;
   wire motor_clk;
   wire [0:0]sel0;
   wire [2:0]step;
 
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT4 #(
+    .INIT(16'hAA80)) 
+    \control_motor[0]_INST_0 
+       (.I0(step[2]),
+        .I1(step[0]),
+        .I2(data30),
+        .I3(step[1]),
+        .O(control_motor[0]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT4 #(
+    .INIT(16'h6222)) 
+    \control_motor[1]_INST_0 
+       (.I0(step[2]),
+        .I1(step[1]),
+        .I2(data30),
+        .I3(step[0]),
+        .O(control_motor[1]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT4 #(
+    .INIT(16'h00F8)) 
+    \control_motor[2]_INST_0 
+       (.I0(step[0]),
+        .I1(data30),
+        .I2(step[1]),
+        .I3(step[2]),
+        .O(control_motor[2]));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT4 #(
+    .INIT(16'h800F)) 
+    \control_motor[3]_INST_0 
+       (.I0(data30),
+        .I1(step[0]),
+        .I2(step[2]),
+        .I3(step[1]),
+        .O(control_motor[3]));
   LUT2 #(
     .INIT(4'h9)) 
     \current_step[0]_i_1 

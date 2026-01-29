@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4716F1595CFDF01",
+      "boundary_crc": "0x4D5BB7D2A4BEC7F2",
       "device": "xc7a35tcpg236-1",
       "gen_directory": "../../../../FinalProyect.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -196,6 +196,11 @@
       },
       "buttons_0": {
         "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "control_motor_0": {
+        "direction": "O",
         "left": "3",
         "right": "0"
       }
@@ -1514,8 +1519,14 @@
           "microblaze_0_axi_periph/M05_ACLK",
           "matrizpuntos_0/s00_axi_aclk",
           "copro_0/s00_axi_aclk",
-          "motor_0/s00_axi_aclk",
-          "microblaze_0_axi_periph/M06_ACLK"
+          "microblaze_0_axi_periph/M06_ACLK",
+          "motor_0/s00_axi_aclk"
+        ]
+      },
+      "motor_0_control_motor": {
+        "ports": [
+          "motor_0/control_motor",
+          "control_motor_0"
         ]
       },
       "reset_1": {
@@ -1553,8 +1564,8 @@
           "microblaze_0_axi_periph/M05_ARESETN",
           "matrizpuntos_0/s00_axi_aresetn",
           "copro_0/s00_axi_aresetn",
-          "motor_0/s00_axi_aresetn",
-          "microblaze_0_axi_periph/M06_ARESETN"
+          "microblaze_0_axi_periph/M06_ARESETN",
+          "motor_0/s00_axi_aresetn"
         ]
       },
       "sys_clock_1": {

@@ -1,6 +1,59 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Jan 27 23:53:31 2026
+| Host         : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_motor_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_motor_0_0 (xilinx.com:user:motor:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_motor_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'control_motor'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Jan 27 23:41:32 2026
+| Host         : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_motor_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of design_1_motor_0_0 (xilinx.com:user:motor:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
 | Date         : Tue Jan 20 03:39:02 2026
 | Host         : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

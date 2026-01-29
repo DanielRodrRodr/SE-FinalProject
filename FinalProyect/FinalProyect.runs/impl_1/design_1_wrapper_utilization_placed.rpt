@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Jan 20 03:54:49 2026
+| Date         : Wed Jan 28 00:09:42 2026
 | Host         : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 | Design       : design_1_wrapper
@@ -32,8 +32,8 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs                 | 2272 |     0 |          0 |     20800 | 10.92 |
-|   LUT as Logic             | 2070 |     0 |          0 |     20800 |  9.95 |
+| Slice LUTs                 | 2271 |     0 |          0 |     20800 | 10.92 |
+|   LUT as Logic             | 2069 |     0 |          0 |     20800 |  9.95 |
 |   LUT as Memory            |  202 |     0 |          0 |      9600 |  2.10 |
 |     LUT as Distributed RAM |  128 |     0 |            |           |       |
 |     LUT as Shift Register  |   74 |     0 |            |           |       |
@@ -72,13 +72,13 @@ Table of Contents
 +--------------------------------------------+------+-------+------------+-----------+-------+
 |                  Site Type                 | Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+------+-------+------------+-----------+-------+
-| Slice                                      |  828 |     0 |          0 |      8150 | 10.16 |
-|   SLICEL                                   |  566 |     0 |            |           |       |
-|   SLICEM                                   |  262 |     0 |            |           |       |
-| LUT as Logic                               | 2070 |     0 |          0 |     20800 |  9.95 |
+| Slice                                      |  820 |     0 |          0 |      8150 | 10.06 |
+|   SLICEL                                   |  554 |     0 |            |           |       |
+|   SLICEM                                   |  266 |     0 |            |           |       |
+| LUT as Logic                               | 2069 |     0 |          0 |     20800 |  9.95 |
 |   using O5 output only                     |    2 |       |            |           |       |
-|   using O6 output only                     | 1611 |       |            |           |       |
-|   using O5 and O6                          |  457 |       |            |           |       |
+|   using O6 output only                     | 1605 |       |            |           |       |
+|   using O5 and O6                          |  462 |       |            |           |       |
 | LUT as Memory                              |  202 |     0 |          0 |      9600 |  2.10 |
 |   LUT as Distributed RAM                   |  128 |     0 |            |           |       |
 |     using O5 output only                   |    0 |       |            |           |       |
@@ -91,8 +91,8 @@ Table of Contents
 | Slice Registers                            | 2367 |     0 |          0 |     41600 |  5.69 |
 |   Register driven from within the Slice    | 1217 |       |            |           |       |
 |   Register driven from outside the Slice   | 1150 |       |            |           |       |
-|     LUT in front of the register is unused |  746 |       |            |           |       |
-|     LUT in front of the register is used   |  404 |       |            |           |       |
+|     LUT in front of the register is unused |  735 |       |            |           |       |
+|     LUT in front of the register is used   |  415 |       |            |           |       |
 | Unique Control Sets                        |  143 |       |          0 |      8150 |  1.75 |
 +--------------------------------------------+------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
@@ -128,9 +128,9 @@ Table of Contents
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   31 |    31 |          0 |       106 | 29.25 |
-|   IOB Master Pads           |   14 |       |            |           |       |
-|   IOB Slave Pads            |   16 |       |            |           |       |
+| Bonded IOB                  |   35 |    35 |          0 |       106 | 33.02 |
+|   IOB Master Pads           |   16 |       |            |           |       |
+|   IOB Slave Pads            |   18 |       |            |           |       |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -192,7 +192,7 @@ Table of Contents
 | FDRE       | 1981 |        Flop & Latch |
 | LUT6       |  815 |                 LUT |
 | LUT5       |  563 |                 LUT |
-| LUT4       |  444 |                 LUT |
+| LUT4       |  448 |                 LUT |
 | LUT3       |  423 |                 LUT |
 | FDCE       |  292 |        Flop & Latch |
 | LUT2       |  258 |                 LUT |
@@ -203,8 +203,8 @@ Table of Contents
 | FDSE       |   74 |        Flop & Latch |
 | RAMD64E    |   64 |  Distributed Memory |
 | RAMS32     |   32 |  Distributed Memory |
+| OBUF       |   26 |                  IO |
 | LUT1       |   24 |                 LUT |
-| OBUF       |   22 |                  IO |
 | FDPE       |   19 |        Flop & Latch |
 | IBUF       |    9 |                  IO |
 | SRLC16E    |    7 |  Distributed Memory |

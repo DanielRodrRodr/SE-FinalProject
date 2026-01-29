@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Tue Jan 20 03:50:48 2026
-# Process ID: 11984
+# Start of session at: Wed Jan 28 00:05:01 2026
+# Process ID: 4564
 # Current directory: C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/design_1_wrapper.vds
@@ -12,6 +12,7 @@
 # Running On: DESKTOP-M5G7CTN, OS: Windows, CPU Frequency: 2712 MHz, CPU Physical cores: 2, Host memory: 8469 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 430.676 ; gain = 164.250
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/motor_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/ip_repo/altavoz_1_0'.
@@ -22,6 +23,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Usuario/Desktop/Uni/
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.cache/ip 
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 475.887 ; gain = 18.371
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,27 +36,27 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4984
+INFO: [Synth 8-7075] Helper process launched with PID 13888
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1285.281 ; gain = 411.359
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.660 ; gain = 411.574
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2677' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:60]
-INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2703]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3193]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3218]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'design_1_copro_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:6' bound to instance 'copro_0' of component 'design_1_copro_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3225]
-INFO: [Synth 8-638] synthesizing module 'design_1_copro_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:35]
-INFO: [Synth 8-3491] module 'design_1_ledsrgb_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:6' bound to instance 'ledsrgb_0' of component 'design_1_ledsrgb_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3251]
-INFO: [Synth 8-638] synthesizing module 'design_1_ledsrgb_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_matrizpuntos_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:6' bound to instance 'matrizpuntos_0' of component 'design_1_matrizpuntos_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3278]
-INFO: [Synth 8-638] synthesizing module 'design_1_matrizpuntos_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:39]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3308]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3321]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:64]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:38]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2677' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2704]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3197]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3222]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_clk_wiz_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_copro_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:6' bound to instance 'copro_0' of component 'design_1_copro_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3229]
+INFO: [Synth 8-638] synthesizing module 'design_1_copro_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_copro_0_0_stub.vhdl:35]
+INFO: [Synth 8-3491] module 'design_1_ledsrgb_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:6' bound to instance 'ledsrgb_0' of component 'design_1_ledsrgb_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3255]
+INFO: [Synth 8-638] synthesizing module 'design_1_ledsrgb_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ledsrgb_0_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_matrizpuntos_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:6' bound to instance 'matrizpuntos_0' of component 'design_1_matrizpuntos_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3282]
+INFO: [Synth 8-638] synthesizing module 'design_1_matrizpuntos_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_matrizpuntos_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3312]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_mdm_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3325]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_microblaze_0_0_stub.vhdl:64]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1624]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
@@ -72,29 +74,29 @@ INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [c:/Users/Usua
 INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:718]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1387]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1387]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2482]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2482]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_xbar_0_stub.vhdl:52]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1624]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1022]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1076]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1104]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1158]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1186]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1022]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1076]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1158]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:1186]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_lmb_bram_0_stub.vhdl:28]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:808]
-INFO: [Synth 8-3491] module 'design_1_motor_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_motor_0_0_stub.vhdl:6' bound to instance 'motor_0' of component 'design_1_motor_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3571]
-INFO: [Synth 8-638] synthesizing module 'design_1_motor_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_motor_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3595]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_teclado_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:6' bound to instance 'teclado_0' of component 'design_1_teclado_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3608]
-INFO: [Synth 8-638] synthesizing module 'design_1_teclado_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-11984-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:35]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2703]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:37]
+INFO: [Synth 8-3491] module 'design_1_motor_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_motor_0_0_stub.vhdl:6' bound to instance 'motor_0' of component 'design_1_motor_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3575]
+INFO: [Synth 8-638] synthesizing module 'design_1_motor_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_motor_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3600]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_teclado_0_0' declared at 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:6' bound to instance 'teclado_0' of component 'design_1_teclado_0_0' [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:3613]
+INFO: [Synth 8-638] synthesizing module 'design_1_teclado_0_0' [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/.Xil/Vivado-4564-DESKTOP-M5G7CTN/realtime/design_1_teclado_0_0_stub.vhdl:35]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/synth/design_1.vhd:2704]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:38]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1RZP34U is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_1RZP34U is either unconnected or has no load
@@ -127,88 +129,35 @@ WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_8RVYHO is either 
 WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_8RVYHO is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_8RVYHO is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[31] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[30] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[29] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[28] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[27] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[26] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[25] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[24] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[23] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[22] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[21] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[20] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[19] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[18] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[17] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[16] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[15] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[14] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[13] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[12] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[11] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[10] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[9] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[8] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[7] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[6] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[5] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[4] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[3] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[2] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_araddr[1] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_arprot[2] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_arprot[1] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[31] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[30] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[29] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[28] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[27] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[26] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[25] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[24] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[23] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[22] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[21] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[20] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[19] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[18] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[17] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[16] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[15] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[14] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[13] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[12] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[11] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[10] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[9] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[8] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[7] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[6] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[5] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[4] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[3] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[2] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awaddr[1] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awprot[2] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_awprot[1] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_wdata[31] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M01_AXI_wdata[30] in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.633 ; gain = 514.711
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.633 ; gain = 514.711
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1388.633 ; gain = 514.711
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1388.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1388.363 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -246,39 +195,30 @@ Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalPr
 Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0/design_1_motor_0_0/design_1_motor_0_0_in_context.xdc] for cell 'design_1_i/motor_0'
 Finished Parsing XDC File [c:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0/design_1_motor_0_0/design_1_motor_0_0_in_context.xdc] for cell 'design_1_i/motor_0'
 Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[0]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:129]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[0]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:130]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[2]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:132]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[2]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:133]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[1]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:141]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[1]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:142]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[3]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:144]
-WARNING: [Vivado 12-584] No ports matched 'control_motor_0[3]'. [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc:145]
 Finished Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.srcs/constrs_1/new/constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1411.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1388.363 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1411.148 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1388.363 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -304,10 +244,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/matrizpuntos_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/copro_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/motor_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -329,26 +269,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M05_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M06_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module design_1_microblaze_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -366,37 +322,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -445,28 +401,27 @@ Report Cell Usage:
 |15    |design_1_teclado_0_0_bbox          |     1|
 |16    |design_1_xbar_0_bbox               |     1|
 |17    |IBUF                               |    10|
-|18    |OBUF                               |    22|
+|18    |OBUF                               |    26|
 +------+-----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 150 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1411.164 ; gain = 514.711
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1411.164 ; gain = 537.242
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1388.363 ; gain = 514.277
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1388.363 ; gain = 514.277
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1412.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1393.988 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1416.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1398.629 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6658406f
+Synth Design complete | Checksum: ebb1fa28
 INFO: [Common 17-83] Releasing license: Synthesis
-85 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.statsThreshold
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:14 . Memory (MB): peak = 1398.629 ; gain = 905.852
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Usuario/Desktop/Uni/Semestre 7/SE/SE-FinalProject/FinalProyect/FinalProyect.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 20 03:53:00 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 00:07:40 2026...

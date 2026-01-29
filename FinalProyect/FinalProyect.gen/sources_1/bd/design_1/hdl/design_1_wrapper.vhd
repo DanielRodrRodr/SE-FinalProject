@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
---Date        : Tue Jan 20 03:45:15 2026
+--Date        : Tue Jan 27 23:55:21 2026
 --Host        : DESKTOP-M5G7CTN running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -20,6 +20,7 @@ entity design_1_wrapper is
     buttons_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     col_clk_0 : out STD_LOGIC;
     col_serial_out_0 : out STD_LOGIC;
+    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 );
     green_0 : out STD_LOGIC;
     led_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     red_0 : out STD_LOGIC;
@@ -53,7 +54,8 @@ architecture STRUCTURE of design_1_wrapper is
     reset_out_0 : out STD_LOGIC;
     reset2_out_0 : out STD_LOGIC;
     led_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    buttons_0 : in STD_LOGIC_VECTOR ( 3 downto 0 )
+    buttons_0 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    control_motor_0 : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1;
 begin
@@ -65,6 +67,7 @@ design_1_i: component design_1
       buttons_0(3 downto 0) => buttons_0(3 downto 0),
       col_clk_0 => col_clk_0,
       col_serial_out_0 => col_serial_out_0,
+      control_motor_0(3 downto 0) => control_motor_0(3 downto 0),
       green_0 => green_0,
       led_0(7 downto 0) => led_0(7 downto 0),
       red_0 => red_0,

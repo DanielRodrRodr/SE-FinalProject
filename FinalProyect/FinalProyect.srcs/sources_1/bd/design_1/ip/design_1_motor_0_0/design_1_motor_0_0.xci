@@ -4,7 +4,7 @@
     "xci_name": "design_1_motor_0_0",
     "cell_name": "motor_0",
     "component_reference": "xilinx.com:user:motor:1.0",
-    "ip_revision": "2",
+    "ip_revision": "3",
     "gen_directory": "../../../../../../FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2" } ],
+        "IPREVISION": [ { "value": "3" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../FinalProyect.gen/sources_1/bd/design_1/ip/design_1_motor_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -44,6 +44,9 @@
     },
     "boundary": {
       "ports": {
+        "control_motor": [ { "direction": "out", "size_left": "3", "size_right": "0" } ],
+        "s00_axi_aclk": [ { "direction": "in" } ],
+        "s00_axi_aresetn": [ { "direction": "in" } ],
         "s00_axi_awaddr": [ { "direction": "in", "size_left": "3", "size_right": "0" } ],
         "s00_axi_awprot": [ { "direction": "in", "size_left": "2", "size_right": "0" } ],
         "s00_axi_awvalid": [ { "direction": "in" } ],
@@ -62,9 +65,7 @@
         "s00_axi_rdata": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
         "s00_axi_rresp": [ { "direction": "out", "size_left": "1", "size_right": "0" } ],
         "s00_axi_rvalid": [ { "direction": "out" } ],
-        "s00_axi_rready": [ { "direction": "in" } ],
-        "s00_axi_aclk": [ { "direction": "in" } ],
-        "s00_axi_aresetn": [ { "direction": "in" } ]
+        "s00_axi_rready": [ { "direction": "in" } ]
       },
       "interfaces": {
         "S00_AXI": {

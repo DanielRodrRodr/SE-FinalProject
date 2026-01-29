@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:motor:1.0
--- IP Revision: 2
+-- IP Revision: 3
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,9 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_motor_0_0 IS
   PORT (
+    control_motor : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    s00_axi_aclk : IN STD_LOGIC;
+    s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axi_awvalid : IN STD_LOGIC;
@@ -73,9 +76,7 @@ ENTITY design_1_motor_0_0 IS
     s00_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s00_axi_rvalid : OUT STD_LOGIC;
-    s00_axi_rready : IN STD_LOGIC;
-    s00_axi_aclk : IN STD_LOGIC;
-    s00_axi_aresetn : IN STD_LOGIC
+    s00_axi_rready : IN STD_LOGIC
   );
 END design_1_motor_0_0;
 
@@ -88,6 +89,9 @@ ARCHITECTURE design_1_motor_0_0_arch OF design_1_motor_0_0 IS
       C_S00_AXI_ADDR_WIDTH : INTEGER
     );
     PORT (
+      control_motor : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      s00_axi_aclk : IN STD_LOGIC;
+      s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s00_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axi_awvalid : IN STD_LOGIC;
@@ -106,9 +110,7 @@ ARCHITECTURE design_1_motor_0_0_arch OF design_1_motor_0_0 IS
       s00_axi_rdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s00_axi_rvalid : OUT STD_LOGIC;
-      s00_axi_rready : IN STD_LOGIC;
-      s00_axi_aclk : IN STD_LOGIC;
-      s00_axi_aresetn : IN STD_LOGIC
+      s00_axi_rready : IN STD_LOGIC
     );
   END COMPONENT motor_v1_0;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -145,6 +147,9 @@ BEGIN
       C_S00_AXI_ADDR_WIDTH => 4
     )
     PORT MAP (
+      control_motor => control_motor,
+      s00_axi_aclk => s00_axi_aclk,
+      s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,
       s00_axi_awprot => s00_axi_awprot,
       s00_axi_awvalid => s00_axi_awvalid,
@@ -163,8 +168,6 @@ BEGIN
       s00_axi_rdata => s00_axi_rdata,
       s00_axi_rresp => s00_axi_rresp,
       s00_axi_rvalid => s00_axi_rvalid,
-      s00_axi_rready => s00_axi_rready,
-      s00_axi_aclk => s00_axi_aclk,
-      s00_axi_aresetn => s00_axi_aresetn
+      s00_axi_rready => s00_axi_rready
     );
 END design_1_motor_0_0_arch;
